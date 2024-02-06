@@ -1,0 +1,144 @@
+/**
+ * This CSS file contains custom styles and utility classes used in the web application. 
+ * It defines gradients for text, button styles, link styling, and responsive media queries. 
+ * The gradients and color schemes are designed to enhance the visual appeal of the application,
+ * and the styles are tailored for a modern and responsive user interface.\
+ * The CSS file uses Tailwind CSS classes for utility-based styling.
+ * 
+ * @author Antonio
+ */ 
+
+ @tailwind base;
+ @tailwind components;
+ @tailwind utilities;
+ 
+ .loader {
+  border: 4px solid #f3f3f3; 
+  border-top: 4px solid #3498db; 
+  position: flex;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite;
+  height: "80vh";
+
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+ .footer{
+   font-size: 18px;
+    color: #ffffff; /* Red color */
+    text-align: center;
+    position: flex;
+    font: bold;
+    font-weight:500
+ }
+ .no-content {
+  font-size: 1.5rem;
+  color: #ff0000; /* Red color */
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+ .custom-button-bg {
+   background: -webkit-linear-gradient(left, #3b82f6, #10b981);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+ }
+ 
+ .text-gradient-blue-teal {
+   background: -webkit-linear-gradient(left, #3b82f6, #10b981);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+ }
+ 
+ .text-gradient-blue-purple {
+   background: -webkit-linear-gradient(left, #3b82f6, #646cff);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+ }
+ 
+ .content-visible {
+   display: block;
+ }
+ #root {
+ 
+   text-align: center;
+ }
+ 
+ a {
+   font-weight: 500;
+   color: #646cff;
+   text-decoration: inherit;
+ }
+ a:hover {
+   color: #535bf2;
+ }
+ 
+ 
+ 
+ h1 {
+   font-size: 3.2em;
+   line-height: 1.1;
+ }
+
+ h2 {
+ 
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    background: -webkit-linear-gradient(left, #3b82f6, #10b981);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0.4em;
+ }
+
+ h3{
+  font-size: 18px;
+  font-weight: bold;
+  background: -webkit-linear-gradient(left, #3b82f6, #10b981);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 0.2em;
+ }
+ 
+ button {
+   border-radius: 8px;
+   border: 1px solid transparent;
+   padding: 0.6em 1.2em;
+   font-size: 1em;
+   font-weight: 500;
+   font-family: inherit;
+   background-color: #1a1a1a;
+   cursor: pointer;
+   transition: border-color 0.25s;
+ }
+ button:hover {
+   border-color: #646cff;
+ }
+ button:focus,
+ button:focus-visible {
+   outline: 4px auto -webkit-focus-ring-color;
+ }
+ 
+ @media (prefers-color-scheme: light) {
+   :root {
+     color: #213547;
+     background-color: #ffffff;
+   }
+   a:hover {
+     color: #747bff;
+   }
+   button {
+     background-color: #f9f9f9;
+   }
+ }
+ 
+ 
+ 
